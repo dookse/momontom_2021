@@ -4,7 +4,7 @@ const weatherSpan = document.querySelector('.js-weather');
 
 const getWeather = (lat, lon) => {
   fetch(
-      `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEYS}&units=metric`)
+      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEYS}&units=metric`)
   .then(response => response.json())
   .then(json => {
     weatherSpan.innerText = `${json.main.temp} @${json.name}`;
