@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/reset.css"/>
+  <link rel="stylesheet" href="css/index.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <title>Document</title>
+</head>
+<body class="vsc-initialized">
+<header>
+  <div class="js-clock clock">
+    <h1>00:00</h1>
+  </div>
+</header>
+
+<main>
+  <form action="" class="js-form form">
+    <label>
+      <input type="text" placeholder="What is your name?"/>
+    </label>
+  </form>
+  <h4 class="js-greetings greetings"></h4>
+  <form action="" class="js-toDoForm toDoForm showing">
+    <label>
+      <input type="text" placeholder="Write a to do "/>
+    </label>
+  </form>
+  <ul class="js-toDoList toDoList showing"></ul>
+</main>
+
+<footer>
+  <span class="js-weather weather"></span>
+</footer>
+<script src="src/clock.js"></script>
+<script src="src/todo.js"></script>
+<script src="src/gretting.js"></script>
+<script src="src/bg.js"></script>
+<script src="src/weather.js"></script>
+</body>
+</html>
